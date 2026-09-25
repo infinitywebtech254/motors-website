@@ -17,10 +17,10 @@ import{
 import'./style.css';
 
 const cars=[
-  ['Mercedes-Benz C200','2021','KSh 6,850,000','38,000 km','Petrol','Automatic','https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=85'],
-  ['Range Rover Velar','2020','KSh 9,600,000','51,000 km','Diesel','Automatic','https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=85'],
+  ['Mercedes-Benz C200','2021','KSh 6,850,000','38,000 km','Petrol','Automatic','https://img-ik.cars.co.za/news-site-za/images/2021/08/Mercedes-Benz-C-Class-2022-1600-1e.jpg'],
+  ['Range Rover Velar','2020','KSh 9,600,000','51,000 km','Diesel','Automatic','https://d20plav1k4kerc.cloudfront.net/media/uploads/assessment/prescreeningimage/aa9b21f4-1f2c-4bba-9e64-6bce1cc69f3f.jpeg'],
   ['BMW 5 Series','2021','KSh 7,450,000','42,000 km','Petrol','Automatic','https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=85'],
-  ['Toyota Land Cruiser','2022','KSh 15,900,000','29,000 km','Diesel','Automatic','https://images.unsplash.com/photo-1594502184342-2e12f877aa73?auto=format&fit=crop&w=1200&q=85']
+  ['Toyota Land Cruiser','2022','KSh 15,900,000','29,000 km','Diesel','Automatic','https://cdn.motor1.com/images/mgl/8QZLM/1605:0:4480:4480/chernyy-toyota-land-cruiser-300-70th-anniversary-na-shosse.webp']
 ];
 
 function App(){
