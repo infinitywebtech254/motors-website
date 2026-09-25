@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --red:#f04432;
+  --dark:#090909;
+  --cream:#efebe3
+}
+
+*{
+  box-sizing:border-box
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body{
+  margin:0;
+  background:var(--cream);
+  font-family:Manrope,sans-serif;
+  color:#111
+}
+
+a{
+  text-decoration:none;
+  color:inherit
+}
+
+.hero{
+  height:100svh;
+  min-height:700px;
+  position:relative;
+  color:#fff;
+  background:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1900&q=88') center/cover
+}
+
+.shade{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,#000d,#0003),
+    linear-gradient(0deg,#0009,transparent)
+}
+
+header{
+  height:90px;
+  position:absolute;
+  z-index:5;
+  left:4%;
+  right:4%;
+  display:grid;
+  grid-template-columns:250px 1fr 200px;
+  align-items:center;
+  border-bottom:1px solid #ffffff55
+}
+
+.brand{
+  display:flex;
+  align-items:end;
+  gap:9px
+}
+
+.brand b{
+  font:35px 'Bebas Neue';
+  letter-spacing:2px
+}
+
+.brand small{
+  font-size:7px;
+  letter-spacing:1.5px;
+  margin-bottom:6px
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  gap:30px
+}
+
+nav a,
+.headCta{
+  font-size:9px;
+  letter-spacing:1.5px
+}
+
+.headCta{
+  justify-self:end;
+  background:var(--red);
+  padding:14px 16px;
+  display:flex;
+  gap:8px;
+  align-items:center;
+  font-weight:700
+}
+
+.menu{
+  display:none;
+  background:none;
+  border:0;
+  color:#fff
+}
+
+.hero main{
+  position:absolute;
+  z-index:2;
+  left:5%;
+  bottom:8%
+}
+
+.hero main>small,
+.sectionHead small,
+.import small,
+.services>small,
+.contact small{
+  font-size:9px;
+  letter-spacing:2.5px
+}
+
+.hero h1{
+  font:clamp(90px,12vw,170px)/.72 'Bebas Neue';
+  margin:14px 0;
+  letter-spacing:1px
+}
+
+.hero h1 em{
+  font-style:normal;
+  color:var(--red)
+}
+
+.hero main>p{
+  max-width:470px;
+  line-height:1.7
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+  margin-top:25px
+}
+
+.buttons a{
+  background:#fff;
+  color:#111;
+  padding:14px 18px;
+  font-size:9px;
+  font-weight:700
+}
+
+.buttons .ghost{
+  background:transparent;
+  color:#fff;
+  border:1px solid #fff
+}
+
+.ticker{
+  background:var(--red);
+  padding:23px;
+  white-space:nowrap;
+  overflow:hidden;
+  font:22px 'Bebas Neue';
+  letter-spacing:2px;
+  word-spacing:28px
+}
+
+.ticker i{
+  font-family:Manrope
+}
+
+.ticker-mobile{
+  display:none
+}
+
+.stock,
+.services,
+.contact{
+  padding:105px 5%
+}
+
+.sectionHead{
+  display:grid;
+  grid-template-columns:1.5fr .7fr;
+  gap:50px;
+  align-items:end;
+  margin-bottom:45px
+}
+
+.sectionHead h2,
+.import h2,
+.services h2,
+.contact h2{
+  font:clamp(65px,8vw,108px)/.82 'Bebas Neue';
+  margin:14px 0
+}
+
+.sectionHead p,
+.import p,
+.contact p{
+  line-height:1.7;
+  color:#666
+}
+
+.cars{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px 18px
+}
+
+.photo{
+  height:420px;
+  position:relative;
+  overflow:hidden
+}
+
+.photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.5s
+}
+
+.cars article:hover img{
+  transform:scale(1.035)
+}
+
+.photo>span{
+  position:absolute;
+  top:14px;
+  left:14px;
+  background:#fff;
+  padding:7px 10px;
+  font-size:9px;
+  font-weight:700
+}
+
+.photo button{
+  position:absolute;
+  right:14px;
+  bottom:14px;
+  border:0;
+  background:var(--red);
+  color:#fff;
+  padding:11px;
+  font-size:8px
+}
+
+.carTitle{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  border-bottom:1px solid #aaa;
+  padding:15px 0
+}
+
+.carTitle h3{
+  font:31px 'Bebas Neue';
+  margin:0
+}
+
+.carTitle strong{
+  font-size:12px
+}
+
+.specs{
+  display:flex;
+  gap:20px;
+  padding-top:12px
+}
+
+.specs span{
+  font-size:9px;
+  color:#666;
+  display:flex;
+  gap:5px;
+  align-items:center
+}
+
+.specs svg{
+  width:13px
+}
+
+.import{
+  background:#0b0b0b;
+  color:#fff;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  min-height:700px
+}
+
+.importPic{
+  background:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1300&q=85') center/cover
+}
+
+.importCopy{
+  padding:90px 9%
+}
+
+.import h2 em{
+  font-style:normal;
+  color:var(--red)
+}
+
+.step{
+  border-top:1px solid #444;
+  padding:17px 0;
+  font-size:12px
+}
+
+.step b{
+  color:var(--red);
+  font-size:9px;
+  margin-right:25px
+}
+
+.importCopy>a{
+  display:inline-block;
+  background:var(--red);
+  padding:15px 17px;
+  margin-top:20px;
+  font-size:9px;
+  font-weight:700
+}
+
+.services>h2{
+  margin-bottom:45px
+}
+
+.serviceGrid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-top:1px solid #aaa
+}
+
+.serviceGrid article{
+  padding:28px 22px;
+  min-height:260px;
+  border-right:1px solid #aaa
+}
+
+.serviceGrid article:first-child{
+  border-left:1px solid #aaa
+}
+
+.serviceGrid svg{
+  margin-bottom:55px
+}
+
+.serviceGrid b{
+  display:block;
+  font:25px 'Bebas Neue'
+}
+
+.serviceGrid p{
+  font-size:11px;
+  line-height:1.7;
+  color:#666
+}
+
+.statement{
+  background:var(--red);
+  padding:65px 4%;
+  font:clamp(75px,11vw,155px)/.76 'Bebas Neue';
+  overflow:hidden
+}
+
+.statement div{
+  white-space:nowrap
+}
+
+.statement .outline{
+  color:transparent;
+  -webkit-text-stroke:2px #111
+}
+
+.contact{
+  background:#111;
+  color:#fff;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px
+}
+
+.contact>div>span{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:10px;
+  margin:10px 0
+}
+
+.contact>div svg{
+  width:14px;
+  color:var(--red)
+}
+
+form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:13px;
+  align-content:center
+}
+
+input,
+select,
+textarea{
+  background:#1b1b1b;
+  border:1px solid #444;
+  color:#fff;
+  padding:15px;
+  font:inherit;
+  font-size:10px
+}
+
+textarea,
+form button{
+  grid-column:1/-1
+}
+
+form button{
+  border:0;
+  background:var(--red);
+  color:#fff;
+  padding:16px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px
+}
+
+/* FOOTER */
+
+.siteFooter{
+  background:#050505;
+  color:#fff;
+  padding:75px 5% 25px
+}
+
+.footerTop{
+  display:grid;
+  grid-template-columns:1.7fr .8fr .8fr 1fr;
+  gap:55px;
+  padding-bottom:55px
+}
+
+.footerBrand b{
+  display:block;
+  font:70px/.8 'Bebas Neue';
+  color:var(--red);
+  letter-spacing:2px
+}
+
+.footerBrand small{
+  display:block;
+  margin-top:9px;
+  font-size:8px;
+  letter-spacing:3px;
+  color:#aaa
+}
+
+.footerBrand p{
+  max-width:330px;
+  margin:25px 0;
+  color:#888;
+  font-size:11px;
+  line-height:1.8
+}
+
+.footerCta{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:var(--red);
+  padding:14px 17px;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:1px
+}
+
+.footerColumn{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:13px
+}
+
+.footerColumn h4{
+  margin:0 0 12px;
+  font:20px 'Bebas Neue';
+  letter-spacing:1px;
+  color:#fff
+}
+
+.footerColumn a,
+.footerColumn>span{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:#888;
+  font-size:10px;
+  line-height:1.5;
+  transition:.25s
+}
+
+.footerColumn a:hover{
+  color:var(--red)
+}
+
+.footerColumn svg{
+  color:var(--red)
+}
+
+.footerColumn .socialTitle{
+  margin-top:22px;
+  margin-bottom:5px
+}
+
+.footerSocials{
+  display:flex;
+  gap:8px
+}
+
+.footerSocials span{
+  width:38px;
+  height:38px;
+  border:1px solid #444;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  transition:.25s;
+  cursor:default
+}
+
+.footerSocials span svg{
+  color:#fff
+}
+
+.footerSocials span:hover{
+  background:var(--red);
+  border-color:var(--red);
+  transform:translateY(-2px)
+}
+
+.footerStrip{
+  border-top:1px solid #292929;
+  border-bottom:1px solid #292929;
+  padding:22px 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  flex-wrap:wrap;
+  font:18px 'Bebas Neue';
+  letter-spacing:2px
+}
+
+.footerStrip i{
+  color:var(--red);
+  font-family:Manrope;
+  font-style:normal
+}
+
+.footerBottom{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding-top:25px
+}
+
+.footerBottom span{
+  font-size:7px;
+  letter-spacing:1.5px;
+  color:#666
+}
+
+@media(max-width:800px){
+
+  header{
+    grid-template-columns:1fr auto
+  }
+
+  .headCta{
+    display:none
+  }
+
+  .menu{
+    display:block
+  }
+
+  nav{
+    display:none
+  }
+
+  nav.open{
+    display:flex;
+    position:absolute;
+    top:90px;
+    left:-4vw;
+    right:-4vw;
+    background:#080808;
+    padding:30px 8vw;
+    flex-direction:column;
+    gap:24px
+  }
+
+  nav.open a{
+    font-size:12px
+  }
+
+  .hero h1{
+    font-size:86px
+  }
+
+  .sectionHead,
+  .import,
+  .contact{
+    grid-template-columns:1fr
+  }
+
+  .cars{
+    grid-template-columns:1fr
+  }
+
+  .importPic{
+    height:430px
+  }
+
+  .serviceGrid{
+    grid-template-columns:1fr 1fr
+  }
+
+  .contact{
+    gap:35px
+  }
+
+  .footerTop{
+    grid-template-columns:1fr 1fr
+  }
+
+  .footerBrand{
+    grid-column:1/-1
+  }
+}
+
+@media(max-width:520px){
+
+  header{
+    height:76px
+  }
+
+  .brand b{
+    font-size:30px
+  }
+
+  nav.open{
+    top:76px
+  }
+
+  .hero{
+    min-height:650px
+  }
+
+  .hero main{
+    left:6%;
+    right:6%
+  }
+
+  .hero h1{
+    font-size:68px
+  }
+
+  .hero main>p{
+    font-size:12px
+  }
+
+  .buttons{
+    flex-direction:column;
+    width:max-content
+  }
+
+  .ticker{
+    padding:22px 10px;
+    font-size:18px;
+    letter-spacing:1px;
+    word-spacing:7px;
+    text-align:center
+  }
+
+  .ticker-desktop{
+    display:none
+  }
+
+  .ticker-mobile{
+    display:block
+  }
+
+  .stock,
+  .services,
+  .contact{
+    padding:70px 6%
+  }
+
+  .sectionHead h2,
+  .import h2,
+  .services h2,
+  .contact h2{
+    font-size:62px
+  }
+
+  .photo{
+    height:300px
+  }
+
+  .carTitle{
+    flex-direction:column;
+    gap:4px
+  }
+
+  .importPic{
+    height:320px
+  }
+
+  .importCopy{
+    padding:65px 6%
+  }
+
+  .serviceGrid{
+    grid-template-columns:1fr
+  }
+
+  .serviceGrid article,
+  .serviceGrid article:first-child{
+    border-left:1px solid #aaa
+  }
+
+  .statement{
+    font-size:64px;
+    padding:45px 5%
+  }
+
+  .statement div{
+    white-space:normal
+  }
+
+  form{
+    grid-template-columns:1fr
+  }
+
+  textarea,
+  form button{
+    grid-column:auto
+  }
+
+  .siteFooter{
+    padding:60px 6% 25px
+  }
+
+  .footerTop{
+    grid-template-columns:1fr 1fr;
+    gap:45px 25px
+  }
+
+  .footerBrand{
+    grid-column:1/-1
+  }
+
+  .footerBrand b{
+    font-size:62px
+  }
+
+  .footerBrand p{
+    font-size:10px
+  }
+
+  .footerCta{
+    padding:13px 15px
+  }
+
+  .footerColumn h4{
+    font-size:18px
+  }
+
+  .footerColumn a,
+  .footerColumn>span{
+    font-size:9px
+  }
+
+  .footerStrip{
+    justify-content:flex-start;
+    gap:12px 15px;
+    font-size:15px;
+    line-height:1.5
+  }
+
+  .footerBottom{
+    flex-direction:column
+  }
+
+  .footerBottom span{
+    font-size:7px
+  }
+}
